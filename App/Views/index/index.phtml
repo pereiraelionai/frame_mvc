@@ -3,10 +3,13 @@
 
 <?php
 
-    foreach($this->view->dados as $indice => $valor) {
-        echo '<pre>';
-        print_r($valor);
-        echo '</pre>';
+    foreach($this->view->dados as $indice => $produto) {
+        echo $produto['id'];
+        echo '<br>';
+        echo $produto['descricao'];
+        echo '<br>';
+        echo $produto['preco'];
+        echo '<hr>';
     }
 
 ?>

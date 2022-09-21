@@ -2,11 +2,15 @@
 <hr>
 
 <?php
+    foreach($this->view->dados as $indice => $info) {
+        $info['titulo'];
+        $info['descricao'];
+?>
 
-    foreach($this->view->dados as $indice => $valor) {
-        echo '<pre>';
-        print_r($valor);
-        echo '</pre>';
+        <h1><?= $info['titulo']?></h1>
+        <p><?= $info['descricao'] ?></p>
+        <hr>
+
+<?php
     }
-
 ?>
